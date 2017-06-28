@@ -1,0 +1,122 @@
+/*********************************
+Base Page Styles
+*********************************/
+
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    font-size: 0.85em;
+    background: url('../img/leaves-1031355_1920.jpg') top center no-repeat;
+    width: 100%;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+}
+
+
+
+/*********************************
+Header
+*********************************/
+
+#header {
+    float: left;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#logo {
+    background: url('./img/JMlogowhite.png') top cover no-repeat;
+    text-align: center;
+    margin: auto;
+    width: 50px;  
+}
+
+
+
+/*********************************
+Navigation
+*********************************/
+
+#nav {
+    margin-top: 20px;
+    list-style: none;
+    float: right;
+}
+
+#nav li {
+    float: left;
+    margin-left: 20px;
+}
+
+a {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px; /** creates a larger click area **/
+    color: white;
+    text-decoration: none;  /** gets rid of underline **/
+}
+
+a:hover, a:focus {
+    color: #A82843;
+}
+
+
+
+/*********************************
+Main Content
+*********************************/
+
+img {
+    max-width: 100%;  /** fluid images **/
+}
+
+h1 {
+    font-size: 6em;
+    font-weight: 900;
+    padding: 10px; /** creates a larger click area **/
+    color: white;
+}
+
+#content {
+    width: 65%;
+    float: none;
+    text-align: center;
+    color: white;
+}
+
+#welcome {
+    font-size: 1.3em;
+    margin: 20px 0px;
+    text-align: center;
+    color: white;
+}
+
+#hire_me {
+    color: white;
+    padding 20px;
+    font-size: 0.9em;
+    text-align: center;
+
+}
+
+#hire_button {
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
