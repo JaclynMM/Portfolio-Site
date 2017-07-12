@@ -267,6 +267,45 @@ Hire Me Button
 
 
 
+/*********************************
+About Me Page Content
+*********************************/
+.redText {
+    color: #A82843;
+}
+
+.redTextsm {
+    font-size: 1em;
+    color: #A82843;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+
+
+
+/*********************************
+Contact Page Content
+*********************************/
+.grayText {
+    color: #AAA;
+}
+
+.grayTextsm {
+    font-size: 1em;
+    color: #AAA;
+    padding: 5px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.modal-body {
+    padding-right: 200px;
+    padding-left: 200px
+}
+
+
 
 
 
