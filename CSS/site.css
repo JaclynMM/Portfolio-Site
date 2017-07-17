@@ -209,7 +209,7 @@ p {
 /*********************************
 Buttons
 *********************************/
-.btn, .btn-default {
+.btn, .btn-default, .hireme {
     padding-top: 100px;
     color: white;
     background-color: transparent;
@@ -229,7 +229,7 @@ Buttons
     padding-top: none;
 }
 
-.btn, .btn-default, .gitButton {
+.gitButton {
     padding-top: 50px;
     color: #A82843;
     background-color: transparent;
