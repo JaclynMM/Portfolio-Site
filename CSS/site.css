@@ -193,7 +193,7 @@ p {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 800px;
 }
 
 .jumbotron {
@@ -207,7 +207,7 @@ p {
 
 
 /*********************************
-Hire Me Button
+Buttons
 *********************************/
 .btn, .btn-default {
     padding-top: 100px;
@@ -231,6 +231,13 @@ Hire Me Button
   background-color: transparent;
   border-color: transparent;
 }
+
+#contactButton {
+    border-color: none;
+    padding-top: none;
+}
+
+
 
 
 
@@ -307,7 +314,44 @@ Contact Page Content
 
 
 
+/*********************************
+Footer
+*********************************/
 
+footer {
+    font-size: .65em;
+    padding-top: 75px;
+    text-align: center;
+}
+
+.footer {
+    margin-bottom: 50px;
+}
+
+i {
+    color: white;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.socialIcons {
+    background: transparent;
+    border: transparent;
+    -webkit-appearance: none;
+}
+
+.iconBar {
+    text-align: center;
+}
+
+.copywrite {
+    padding-top: 20px;
+    color: #AAA
+}
+
+button, .socialIcons, .redText {
+    color: #A82843;
+}
 
 
 
