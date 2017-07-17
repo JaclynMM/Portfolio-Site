@@ -224,9 +224,22 @@ Buttons
   border-color: transparent;
 }
 
-#contactButton {
-    border-color: none;
+.contactButton {
+    border-color: transparent;
+    background-color: transparent;
+    color: #AAA;
+    font-weight: 700;
     padding-top: none;
+    text-decoration: none;
+}
+
+.contactButton: hover,  {
+    border-color: transparent;
+    background-color: transparent;
+    color: #A82843;
+    font-weight: 700;
+    padding-top: none;
+    text-decoration: none;
 }
 
 .gitButton {
@@ -316,6 +329,74 @@ Contact Page Content
 
 
 /*********************************
+Image Gallery
+*********************************/
+
+/*********************************
+Thumbnail Images
+*********************************/
+
+.containter {
+    padding-top: 100px;
+}
+
+.img {
+    border-color: black;
+    border-style: solid;
+}
+
+.img-rounded {
+    border-radius: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 0px;
+    background-color: #FFFFFF;
+    margin: 10px;
+}
+
+.img-rounded a {
+    display: block;
+}
+
+.img-rounded img {
+    width: 100%;
+    max-width: 150px;
+    padding: 2px;
+}
+
+.float_center {
+    position: relative;
+    width: 800px;
+}
+
+.img-align {
+    width: 170px;
+
+}
+.row {
+    margin-left: 0px;
+}
+
+
+
+/*********************************
+Lightbox
+*********************************/
+#wrapper {
+    margin:0 auto; /*centers the div horizontally in all browsers (except IE)*/
+    background:none; 
+    text-align:left; /*resets text alignment from body tag */
+    border-top:none; 
+    padding:25px; 
+    /*Let's add some CSS3 styles, these will degrade gracefully in older browser and IE*/
+    border-radius:0 0 5px 5px;
+    -moz-border-radius:0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px; 
+}
+
+
+
+/*********************************
 Footer
 *********************************/
 
@@ -343,15 +424,20 @@ i {
 
 .iconBar {
     text-align: center;
+    color: #A82843;
 }
 
 .copywrite {
-    padding-top: 20px;
+    padding-top: 15px;
     color: #AAA
 }
 
-button, .socialIcons, .redText {
+.redIcon {
     color: #A82843;
+}
+
+.grayIcon {
+    color: #AAA;
 }
 
 
