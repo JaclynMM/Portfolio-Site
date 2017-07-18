@@ -382,7 +382,7 @@ Thumbnail Images
 /*********************************
 Lightbox
 *********************************/
-#wrapper {
+.wrapper {
     margin:0 auto; /*centers the div horizontally in all browsers (except IE)*/
     background:none; 
     text-align:left; /*resets text alignment from body tag */
@@ -393,6 +393,35 @@ Lightbox
     -moz-border-radius:0 0 5px 5px;
     -webkit-border-radius: 0 0 5px 5px; 
 }
+
+.backdrop {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    display: none;
+}
+
+.box {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 500px;
+    height: 300px;
+    background: white;
+    display: none;
+    padding: 10px;
+}
+
+.close {
+    float: right;
+    margin-right: 6px;
+    cursor: pointer;
+}
+
 
 
 
