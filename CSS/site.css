@@ -394,35 +394,29 @@ Lightbox
     -webkit-border-radius: 0 0 5px 5px; 
 }
 
-.backdrop {
-    position: absolute;
-    top: 0px;
-    left: 0px;
+/** Styling Jquery for Lightbox **/
+
+#overlay {
+    background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    background: black;
-    opacity: 0.5;
-    display: none;
-}
-
-.box {
     position: absolute;
-    top: 20%;
-    left: 30%;
-    width: 500px;
-    height: 300px;
-    background: white;
+    top: 0;
+    left: 0;
     display: none;
-    padding: 10px;
 }
 
-.close {
-    float: right;
-    margin-right: 6px;
-    cursor: pointer;
+#overlay img {
+    margin-top: 10%;
+    text-align: center;
+    max-height: 500px;
+    max-width: 500px;
 }
 
-
+overlay p {
+    font-size: .3em;
+    font-weight: 900;
+}
 
 
 /*********************************

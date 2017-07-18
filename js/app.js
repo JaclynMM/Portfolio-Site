@@ -6,21 +6,38 @@ $( "#submit" ).click(function() {
 // Problem: User goes to a dead end when clicking on image
 // Solution: Create an overlay with the large image - Lightbox
 
-//1. Capture the click event on a link to an image
+var $overlay = $('<div id="overlay"></div>');
+var $image = $("<img>");
+var $caption = $("<p></p>")
+
+// An Image
+$overlay.append($image);
+// Caption to overlay
+$overlay.append($caption);
+
+// Add Overlay
+$("body").append($overlay);
+
+// Capture the click event on a link to an image
 $("#imageGallery a").click(function(event){
     event.preventDefault();
-    var href = $(this).attr("href");
-    console.log(href);
+    var imageLocation = $(this).attr("href");
+    // Update overlay with the image linked in the link
+    $image.attr("src", imageLocation);
 
-    //1.1 Show the overlay
-    //1.2 Update overlay with the image linked in the link
-    //1.3 Add Caption with alt attribute
+    // Show the overlay
+    $overlay.show();
+
+    // Add Caption with alt attribute
+    var captionText = $(this).children("img").attr("alt");
+    $caption.text(captionText);
 
 });
 
-//2. Add Overlay
-    //2.1 An Image
-    //2.2 Caption
-//3. When overlay is clicked
-    //3.1 Hide the Overlay
+
+// When overlay is clicked
+$overlay.click(function() {
+    // Hide the Overlay
+    $overlay.hide();
+});
 
