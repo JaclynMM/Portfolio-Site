@@ -64,19 +64,15 @@ Header
 Navigation
 *********************************/
 
-.nav li {
-
-}
-
 .nav>li>a {
     padding: 10px 5px;
     color: white;
-
 }
 
 a {
     font-size: 1em;
     font-weight: 400;
+    margin: 6px;
 }
 
 a:hover, a:focus {
@@ -142,6 +138,10 @@ a:hover, a:focus {
 
 .navbar-collapse, .collapse, .in {
     border: none;
+}
+
+.navbar-collapse {
+
 }
 
 
