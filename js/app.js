@@ -7,7 +7,7 @@ $( "#submit" ).click(function() {
 // Solution: Create an overlay with the large image - Lightbox
 
 var $overlay = $('<div id="overlay"></div>');
-var $image = $("<img>");
+var $image = $('<img class="whiteBorder">');
 var $caption = $("<p></p>")
 
 // An Image

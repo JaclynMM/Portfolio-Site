@@ -10,6 +10,8 @@ body {
 }
 
 
+
+
 /*********************************
 Background Images
 *********************************/
@@ -31,13 +33,6 @@ body, .bg-none {
 
 
 
-/*********************************
-#wrapper {
-    width: 600px;
-    margin: 0 auto;
-}
-*********************************/
-
 
 /*********************************
 Header
@@ -51,7 +46,6 @@ Header
 
 .logo {
     background: url('./img/JMlogowhite.png') top cover no-repeat;
-    margin-right: 5000px;
     width: 35px;  
     background-size: 100%;
 }
@@ -65,19 +59,19 @@ Header
 
 
 
+
 /*********************************
 Navigation
 *********************************/
 
 .nav li {
-    float: left;
-    margin-left: 20px;
-    list-style: none;
-    color: white;
+
 }
 
 .nav>li>a {
     padding: 10px 5px;
+    color: white;
+
 }
 
 a {
@@ -93,6 +87,7 @@ a:hover, a:focus {
 .navbar, .navbar-default {
     background-color: transparent;
     margin: 25px;
+    margin-bottom: 0px;
 }
 
 .navbar-brand {
@@ -109,15 +104,6 @@ a:hover, a:focus {
 .navbar-default .navbar-nav > li > a, .gray-type {
   color: #333;
 }
-
-
-
-/*.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-  color: #FFCC00;
-  background-color: transparent;
-}*/
-
 
 .homep .navbar-nav > li > a:link,
 .homep .navbar-nav > li > a:visited {
@@ -154,7 +140,53 @@ a:hover, a:focus {
   float: left; /* moved from the natural position of top right corner */
 }
 
+.navbar-collapse, .collapse, .in {
+    border: none;
+}
 
+
+
+
+/*********************************
+Media Query
+*********************************/
+
+@media (max-width: 760px) {
+    #imageGallery {
+        margin: 0px;
+        padding-right: none;
+    }
+
+    .row {
+        margin-left: 50px;
+        padding-top: 150px;
+    }
+
+    ul.nav.navbar-nav.navbar-right {
+    position: absolute;
+    top: 75px;
+    left: 30px;
+    text-align: left;
+    display: block;
+    }
+}
+
+@media (max-width: 525px) {
+    #imageGallery {
+        margin: none;
+        padding: none;
+    }
+}
+
+@media (max-width: 650px) {
+    /* moves the logo down in mobile view to allow room for the navbar */
+    .logo {
+        /*opacity: 0.3;*/
+        position: fixed;
+        margin-right: 0px;
+        margin: auto;
+    }
+}
 
 
 
@@ -164,6 +196,12 @@ a:hover, a:focus {
 /*********************************
 Main Content
 *********************************/
+
+.jMlogo {
+    position: absolute;
+    padding-top: -50px;
+    margin-left: -20px;
+}
 
 .main-content {
     margin-top: 175px;
@@ -203,9 +241,6 @@ p {
 
 
 
-
-
-
 /*********************************
 Buttons
 *********************************/
@@ -233,7 +268,7 @@ Buttons
     text-decoration: none;
 }
 
-.contactButton: hover,  {
+.contactButton:hover  {
     border-color: transparent;
     background-color: transparent;
     color: #A82843;
@@ -251,40 +286,6 @@ Buttons
     font-size: 1.25em;
 }
 
-
-
-
-
-/*********************************
-#content {
-    width: 65%;
-    float: none;
-    text-align: center;
-    color: white;
-}
-
-#welcome {
-    font-size: 1.3em;
-    margin: 20px 0px;
-    text-align: center;
-    color: white;
-}
-
-#hire_me {
-    color: white;
-    padding 20px;
-    font-size: 0.9em;
-    text-align: center;
-
-}
-
-#hire_button {
-    margin-top: 20px;
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-}
-*********************************/
 
 
 
@@ -328,6 +329,7 @@ Contact Page Content
 
 
 
+
 /*********************************
 Image Gallery
 *********************************/
@@ -336,10 +338,6 @@ Image Gallery
 Thumbnail Images
 *********************************/
 
-.containter {
-    padding-top: 100px;
-}
-
 .img {
     border-color: black;
     border-style: solid;
@@ -347,8 +345,6 @@ Thumbnail Images
 
 .img-rounded {
     border-radius: 0px;
-    width: 150px;
-    height: 150px;
     border-radius: 0px;
     background-color: #FFFFFF;
     margin: 10px;
@@ -360,7 +356,7 @@ Thumbnail Images
 
 .img-rounded img {
     width: 100%;
-    max-width: 150px;
+    max-width: 600px;
     padding: 2px;
 }
 
@@ -375,7 +371,9 @@ Thumbnail Images
 }
 .row {
     margin-left: 0px;
+    padding-top: 100px;
 }
+
 
 
 
@@ -400,7 +398,7 @@ Lightbox
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
@@ -417,6 +415,12 @@ overlay p {
     font-size: .3em;
     font-weight: 900;
 }
+
+.whiteBorder {
+    border: 10px white solid;
+}
+
+
 
 
 /*********************************
@@ -437,6 +441,10 @@ i {
     color: white;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+i:hover {
+    color: #d393a1;
 }
 
 .socialIcons {
@@ -463,9 +471,16 @@ i {
     color: #AAA;
 }
 
+.grayIcon:hover {
+    color: #666666;
+}
 
 
 
+
+/*********************************
+Box Sizing
+*********************************/
 * {
     box-sizing: border-box;
 }

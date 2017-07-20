@@ -8,6 +8,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     <link rel="stylesheet" media="screen" href="css/site.css" />
+    <link href="php/contact.php" rel="stylesheet" type="text/css">
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,900" rel="stylesheet">
@@ -29,7 +31,6 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand text-muted" href="index.html"><img class="logo img-responsive" src="./img/JMlogoA82843.png"></a>
                 <div class="collapse navbar-collapse">
                     <ul class = "nav navbar-nav navbar-right">
                         <li class="gray-type"><a href = "about.html">about</a></li>
@@ -44,6 +45,8 @@
     <!-- End Navbar -->
 
     <!-- Main Content -->
+    <a class="jMlogo" href="index.html"><img class="logo img-responsive" src="./img/JMlogoA82843.png"></a>
+
     <div class = "container main-content">
 
         <div id = "jumbotron">
@@ -51,34 +54,43 @@
 
             <div class = "modal-body">
                 
-                <form class="form">
+                <form class="form" action="contact.php" method="post">
+
+                    <div class="form-group">
+                        <label class="sr-only" for="text" >
+                            Name
+                        </label>
+                        <input type="text" class="form-control" placeholder="Name" name="name">
+                    </div>
 
                     <div class="form-group">
                         <label class="sr-only" for="mobile-phone">
                             Mobile Phone
                         </label>
-                        <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone">
+                        <input type="tel" class="form-control" id="mobilePhone" placeholder="Mobile Phone" name="number">
                     </div>
 
                     <div class="form-group">
                         <label class="sr-only" for="email">
                             E-Mail
                         </label>
-                        <input type="text" class="form-control" placeholder="E-Mail">
+                        <input type="text" class="form-control" placeholder="E-Mail" name="email">
                     </div>
 
                     <div class="form-group">
                         <label class="sr-only" for="text">
                             Subject
                         </label>
-                        <input type="text" class="form-control" placeholder="Subject">
+                        <input type="text" class="form-control" placeholder="Subject" name="sub">
                     </div>
 
                     <div class="form-group">
                         <label class="sr-only" for="text">
                             Conversation Starter
                         </label>
-                        <textarea class="form-control grayText" placeholder="Conversation Starter"> Conversation Starter </textarea>
+                        <textarea class="form-control grayText" placeholder="Conversation Starter" name="msg"> 
+                            Conversation Starter
+                        </textarea>
                     </div>
 
                 </form>
@@ -88,7 +100,6 @@
       <!-- Submit Button  -->      
             <div id="submit">
                 <button class="contactButton" onclick="myFunction()">Submit</button>
-
             </div>
       <!-- End Submit Button  -->      
 
