@@ -27,8 +27,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <link rel="stylesheet" media="screen" href="css/site.css" />
-    <link href="php/secure_email_code.php" rel="stylesheet" type="text/css">
-    <link href="php/secure_email_form.php" rel="stylesheet" type="text/css">
+    <link href="php/send_form_email.php" rel="stylesheet" type="text/css">
 
 
     <!-- Fonts -->
@@ -74,13 +73,13 @@
 
             <div class = "modal-body">
                 
-                <form class="form" action="secure_email_code.php" method="post">
+                <form class="form" method="post" action="send_form_email.php">
 
                     <div class="form-group">
                         <label class="sr-only" for="text" >
                             Name
                         </label>
-                        <input type="text" class="form-control" placeholder="Name" name="vname">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
                     </div>
 
                     <div class="form-group">
@@ -94,7 +93,7 @@
                         <label class="sr-only" for="email">
                             E-Mail
                         </label>
-                        <input type="text" class="form-control" placeholder="E-Mail" name="vemail">
+                        <input type="text" class="form-control" placeholder="E-Mail" name="email">
                     </div>
 
                     <div class="form-group">
