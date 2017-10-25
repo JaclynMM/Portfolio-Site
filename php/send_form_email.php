@@ -24,7 +24,6 @@ if(isset($_POST['email'])) {
         died('We are sorry, but there appears to be a problem with the form you submitted.');       
     }
  
-     
  
     $name = $_POST['name']; // required
     $num = $_POST['num']; // required
