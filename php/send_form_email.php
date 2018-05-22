@@ -4,17 +4,7 @@ if(isset($_POST['email'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "jaclyn.mullin@gmail.com";
     $email_subject = "jaclynmullin.com contact response";
- 
-    function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted.";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
-    }
- 
- 
+
     // validation expected data exists
     if(!isset($_POST['name']) ||
         !isset($_POST['num']) ||
@@ -45,15 +35,6 @@ if(isset($_POST['email'])) {
   }
  
     $email_message = "Form details below.\n\n";
- 
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
- 
-     
- 
     $email_message .= "Name: ".clean_string($name)."\n";
     $email_message .= "Number: ".clean_string($num)."\n";
     $email_message .= "Email: ".clean_string($email)."\n";
@@ -64,7 +45,12 @@ if(isset($_POST['email'])) {
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
+
+mail($email_to, $email_subject, $email_message, $headers);  
+
+// if you want the redirect:
+// header('Location: /contact-thank-you.html');
+// exit();
 ?>
  
 <!-- include your own success html here -->
@@ -73,5 +59,19 @@ Thank you for contacting me. I will be in touch soon!
  
 <?php
  
+}
+
+function died($error) {
+  // your error code can go here
+  echo "We are very sorry, but there were error(s) found with the form you submitted.";
+  echo "These errors appear below.<br /><br />";
+  echo $error."<br /><br />";
+  echo "Please go back and fix these errors.<br /><br />";
+  die();
+}
+
+function clean_string($string) {
+  $bad = array("content-type","bcc:","to:","cc:","href");
+  return str_replace($bad,"",$string);
 }
 ?>
