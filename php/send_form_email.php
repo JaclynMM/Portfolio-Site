@@ -55,7 +55,8 @@ exit();
  
 <!-- include your own success html here -->
  
-Thank you for contacting me. I will be in touch soon!
+Thank you for contacting me. 
+I will be in touch soon!
  
 <?php
  
