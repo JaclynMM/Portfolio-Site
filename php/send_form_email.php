@@ -51,14 +51,14 @@ mail($email_to, $email_subject, $email_message, $headers);
 // if you want the redirect:
 // header('Location: /contact-thank-you.html');
 // exit();
-?>
+<?php
  
-<!-- include your own success html here -->
+//<!-- include your own success html here -->
  
 header('Location: /contact-thank-you.html');
 exit();
  
-<?php
+?>
  
 }
 
